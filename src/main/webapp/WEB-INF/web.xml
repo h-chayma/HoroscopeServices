@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>HoroscopeServices</display-name>
+
+    <!-- Servlet mappings for ZodiacSignService -->
+    <servlet>
+        <servlet-name>ZodiacSignService</servlet-name>
+        <servlet-class>org.example.service.ZodiacSignService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ZodiacSignService</servlet-name>
+        <url-pattern>/zodiac</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet mappings for LifePathNumberService -->
+    <servlet>
+        <servlet-name>LifePathNumberService</servlet-name>
+        <servlet-class>org.example.service.LifePathNumberService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LifePathNumberService</servlet-name>
+        <url-pattern>/lifePathNumber</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet mappings for CrystalBallService -->
+    <servlet>
+        <servlet-name>CrystalBallService</servlet-name>
+        <servlet-class>org.example.service.CrystalBallService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrystalBallService</servlet-name>
+        <url-pattern>/crystalBall</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet mappings for LoveCompatibilityService -->
+    <servlet>
+        <servlet-name>LoveCompatibilityService</servlet-name>
+        <servlet-class>org.example.service.LoveCompatibilityService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoveCompatibilityService</servlet-name>
+        <url-pattern>/loveCompatibility</url-pattern>
+    </servlet-mapping>
+</web-app>
